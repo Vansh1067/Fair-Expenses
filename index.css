@@ -20,7 +20,7 @@ body{
     border-top: 3px solid black;
     padding: 5px 0px;
 }
-.butt button,.Registration button,.inputnames button{
+.butt button,.Registration button,.inputnames button,.Expenses button{
     background-color: darkorange;
     border: none;
     font-size: 20px;
@@ -43,7 +43,7 @@ body{
 }
 
 
-.Registration,.inputnames{
+.Registration,.inputnames,.Expenses{
     background-color: rgb(28, 0, 94);
     display: flex;
     flex-direction:column;
@@ -55,10 +55,7 @@ body{
     max-width: 600px;
     margin: 0 auto;
 }
-.inputnames{
-    top:-800px;
-}
-.Registration h1,.inputnames h1{
+.Registration h1,.inputnames h1,.Expenses h1{
     color:white;
     text-align: center;
     font-size: 30px;
@@ -67,14 +64,16 @@ body{
     padding-top: 5px;
     text-decoration: underline;
 }
-.Registration input,.Registration button,.inputnames input,.inputnames button{
+.Registration input,.Registration button,.inputnames input,.inputnames button,.Expenses input,.Expenses button{
    margin: 25px;
     height: 40px;
     border: none;
     outline: none;
     box-shadow: -2px -2px 10px black;
 }
-.Registration input,.inputnames input{
+.Registration input,.inputnames input,.Expenses input{
     padding:5px;
     font-size: 15px;
+
+    
 }
