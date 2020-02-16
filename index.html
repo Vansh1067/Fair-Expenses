@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fair-Expenses</title>
     <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
 </head>
 <body>
     <header>
@@ -16,37 +17,37 @@
         </div>
     </header>
     <section>
-        <div class="butt " >
-            <button>New Registration</button>
-            <button>Expenses</button>
-            <button>Report</button>
+        <div class="butt" id="buttonUI" >
+            <button id="newreg">New Registration</button>
+            <button id="expens">Expenses</button>
+            <button id="report">Report</button>
         </div>
-        <div class="Registration hide">
+        <div class="Registration hide" id="RegistrationUI">
             <h1>Add Group</h1>
             <input type="text" placeholder="Enter Group Name.....">
             <input type="text" placeholder="Enter No. of member in group">
-            <button type="submit">ADD</button>
-            <button type="reset">Cancel</button>
+            <button type="submit"id="addGroupAddButton">ADD</button>
+            <button type="reset" id="addGroupCancelButton">Cancel</button>
         </div>
-        <div class="inputnames hide">
+        <div class="inputnames hide" id="addMemberName">
             <h1>Add Members Names</h1>
             <input type="text" placeholder="Enter Member Name.....">
             <input type="text" placeholder="Enter Member Name.....">
             <input type="text" placeholder="Enter Member Name.....">
             <input type="text" placeholder="Enter Member Name.....">
             <input type="text" placeholder="Enter Member Name.....">
-            <button type="submit">ADD</button>
-            <button type="reset">Reset</button>
+            <button type="submit" id="addMemberNameAddButton">ADD</button>
+            <button type="reset" id="addMemberNameResetButton">Reset</button>
         </div>
-        <div class="Expenses hide">
+        <div class="Expenses hide" id="expensesUI">
             <h1>Add Expenses</h1>
             <input type="text" placeholder="Enter Amount.....">
             <input type="text" placeholder="Enter Owner Name.......">
             <input type="text" placeholder="Enter Valid Reason.......">
-            <button type="submit">ADD</button>
-            <button type="reset">Cancel</button>
+            <button type="submit" id="addExpensesAddButton">ADD</button>
+            <button type="reset" id="addExpensesCancelButton">Cancel</button>
         </div>
-        <div class="group-names hide" >
+        <div class="group-names hide" id="reportUI">
             <h1>Group Names</h1>
             <ul>
             <div class="group-list">
@@ -58,10 +59,21 @@
             <div class="group-list">
                 <li>Shivansh</li>
             </div>
+             <div class="group-list">
+                <li>Bhavi</li>
+            </div>
             <div class="group-list">
                 <li>Bhavi</li>
             </div>
+            <div class="group-list">
+                <li>Bhavi</li>
+            </div>
+            <div class="group-list">
+                <li>Bhavi</li>
+            </div>
+            
         </ul>
+        <button class="backButton" id="groupNamesBackButton">Back</button>
         </div>
         <div class="Member hide" >
             <h1>Members Names</h1>
