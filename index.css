@@ -112,6 +112,8 @@ body{
 .input-content {
     display: flex;
     flex-direction: column;
+    max-height: 450px;
+    overflow-y: scroll;
 
 }
 .Registration h1,.inputnames h1,.Expenses h1,.Member h1,.group-names h1,.member-details h1{
