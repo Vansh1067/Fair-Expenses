@@ -29,6 +29,26 @@ body{
     margin:0 55px;
     
 }
+.group-list{
+    background-color: rgb(245, 160, 3);
+    margin:20px;
+    box-shadow: -3px 3px 15px black;
+    border-radius: 5px;
+    
+}
+.group-list li{
+    list-style: none;
+    font-size: 25px;
+    padding:15px;
+    text-align: center;
+    font-family: fantasy;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+     text-align:justify;
+    
+}
 .butt{
     
     min-height: 300px;
@@ -41,21 +61,48 @@ body{
 
    
 }
+.total-fair{
+    background-color: black;
+    margin:20px;
+    border-radius: 5px;
+    box-shadow: -6px 6px 25px black;
+    display: flex;
+    flex-direction: row;
+    padding:10px;
+    font-size:25px;
+    justify-content: space-between;
+    color:white;
+    font-family: fantasy;
+}
 
+#total-fair-price{
+    color:green;
 
-.Registration,.inputnames,.Expenses{
+}
+#date{
+    padding-right:15px;
+    color:rgb(9, 24, 236);
+    
+}
+
+#fair{
+    color:red;
+    padding-left:15px;
+    
+}
+
+.Registration,.inputnames,.Expenses,.Member,.group-names,.member-details{
     background-color: rgb(28, 0, 94);
     display: flex;
     flex-direction:column;
     justify-content: space-around;
     margin:0 20px;
     position: relative;
-    top:-400px;
     min-width: 300px;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0px auto;
 }
-.Registration h1,.inputnames h1,.Expenses h1{
+.Registration h1,.inputnames h1,.Expenses h1,.Member h1,.group-names h1,.member-details h1{
     color:white;
     text-align: center;
     font-size: 30px;
@@ -76,4 +123,13 @@ body{
     font-size: 15px;
 
     
+}
+ul{
+    max-height:425px;
+    overflow-y:scroll;
+    
+}
+
+.hide{
+    display:none;
 }

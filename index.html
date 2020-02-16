@@ -16,19 +16,19 @@
         </div>
     </header>
     <section>
-        <div class="butt">
+        <div class="butt " >
             <button>New Registration</button>
             <button>Expenses</button>
             <button>Report</button>
         </div>
-        <div class="Registration" style="display: none;">
+        <div class="Registration hide">
             <h1>Add Group</h1>
             <input type="text" placeholder="Enter Group Name.....">
             <input type="text" placeholder="Enter No. of member in group">
             <button type="submit">ADD</button>
             <button type="reset">Cancel</button>
         </div>
-        <div class="inputnames" style="display: none;">
+        <div class="inputnames hide">
             <h1>Add Members Names</h1>
             <input type="text" placeholder="Enter Member Name.....">
             <input type="text" placeholder="Enter Member Name.....">
@@ -38,13 +38,74 @@
             <button type="submit">ADD</button>
             <button type="reset">Reset</button>
         </div>
-        <div class="Expenses" style="display: ">
+        <div class="Expenses hide">
             <h1>Add Expenses</h1>
             <input type="text" placeholder="Enter Amount.....">
             <input type="text" placeholder="Enter Owner Name.......">
             <input type="text" placeholder="Enter Valid Reason.......">
             <button type="submit">ADD</button>
             <button type="reset">Cancel</button>
+        </div>
+        <div class="group-names hide" >
+            <h1>Group Names</h1>
+            <ul>
+            <div class="group-list">
+                <li>Vansh </li>
+            </div>
+            <div class="group-list">
+                <li>Rahul Chauhan</li>
+            </div>
+            <div class="group-list">
+                <li>Shivansh</li>
+            </div>
+            <div class="group-list">
+                <li>Bhavi</li>
+            </div>
+        </ul>
+        </div>
+        <div class="Member hide" >
+            <h1>Members Names</h1>
+            <ul>
+            <div class="group-list">
+                <li>Vansh <h3>-25</h3></li>
+            </div>
+            <div class="group-list">
+                <li>Rahul Chauhan<h3>-35</h3></li>
+            </div>
+            <div class="group-list">
+                <li>Shivansh<h3>-55</h3></li>
+            </div>
+            <div class="group-list">
+                <li>Bhavi<h3>-125</h3></li>
+            </div>
+            <div class="group-list">
+                <li>Naman<h3>-225</h3></li>
+            </div>
+        </ul>
+        </div>
+        <div class="member-details hide">
+            <h1>Vansh</h1>
+            <ul>
+            <div class="group-list">
+                <li><h5 id="date">21/02/2020</h5><p>Campus Shop given in chicken </p> <h3 id="fair">-25</h3></li>
+            </div>
+            <div class="group-list">
+                <li><h5 id="date">12/02/2020</h5><p>Campus Shop given in chicken </p> <h3 id="fair">-125</h3></li>
+            </div>
+            <div class="group-list">
+                <li><h5 id="date">1/02/2020</h5><p>Campus Shop given in chicken </p> <h3 id="fair">25</h3></li>
+            </div>
+            <div class="group-list">
+                <li><h5 id="date">5/02/2020</h5><p>Campus Shop given in chicken </p> <h3 id="fair">25</h3></li>
+            </div>
+            <div class="group-list">
+                <li><h5 id="date">21/01/2020</h5><p>Campus Shop given in chicken </p> <h3 id="fair">125</h3></li>
+            </div>
+        </ul>
+        <div class="total-fair">
+            <h2>Total-Fair :</h2>
+            <h2 id="total-fair-price">-225</h2>
+        </div>
         </div>
     </section>
 
