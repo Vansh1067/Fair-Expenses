@@ -24,7 +24,7 @@ body{
     background-color: darkorange;
     border: none;
     font-size: 20px;
-    padding: 5px 10px;
+    padding: 10px 10px;
     font-weight: bold;
     margin:0 55px;
     border-radius:5px;
@@ -90,15 +90,11 @@ body{
 #date{
     padding-right:15px;
     color:rgb(9, 24, 236);
-    
 }
-
 #fair{
     color:red;
     padding-left:15px;
-    
 }
-
 .Registration,.inputnames,.inputnames,.Expenses,.Member,.group-names,.member-details{
     background-color: rgb(28, 0, 94);
     display: flex;
@@ -124,6 +120,7 @@ body{
     font-weight: bolder;
     padding-top: 5px;
     text-decoration: underline;
+    margin-bottom: 15px;
 }
 .Registration input,.Registration button,.input-content input,.inputnames button,.Expenses input,.Expenses button{
    margin: 25px;
@@ -138,7 +135,7 @@ body{
     font-size: 15px;
 }
 ul,.input-content{
-    max-height:425px;
+    max-height:350px;
     overflow-y:scroll;
     
 }
@@ -152,6 +149,18 @@ ul,.input-content{
     max-height: 350px;
     overflow-y: scroll;
 
+}
+#addMemberNameResetButton{
+    float:right;
+    margin-bottom: 0px;
+    background-color: red;
+}
+.addButtonimg{
+    width:50px;
+    height:50px;
+    margin:20px;
+    margin-bottom: 0;
+    
 }
 .hide{
     display:none;
