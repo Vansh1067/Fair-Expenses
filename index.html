@@ -16,6 +16,23 @@
             <p>Now You can Track Your Expenses Here!</p>
         </div>
     </header>
+    <p id="demo"></p>
+
+<script>
+var xmlhttp = new XMLHttpRequest();
+ xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var myObj = JSON.parse(this.responseText);
+    document.getElementById("demo").innerHTML = myObj.userId;
+  }
+}; 
+/* xmlhttp.onload=function(){
+    var myObj = JSON.parse(this.responseText);
+    document.getElementById("demo").innerHTML = myObj.userID;
+} */
+xmlhttp.open("GET", "DB.json", true);
+xmlhttp.send();
+</script>
     <section>
         <div class="butt" id="buttonUI" >
             <button id="newreg">New Registration</button>
