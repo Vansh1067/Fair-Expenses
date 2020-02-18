@@ -54,9 +54,14 @@ body{
     font-weight: bolder;
     display: flex;
     flex-direction: row;
-    align-items: center;
-     text-align:justify;
     
+    justify-content: space-between;
+     text-align:justify;
+     
+    
+}
+.group-list li p{
+    word-break:break-all;
 }
 .butt{
     
