@@ -3,72 +3,72 @@
         "accId":123,
         "details":[
             {
-                "grpName":"rahul wala",
+                "grpName":"Queen",
                 "grpId":12255,
-                "noOfMembers":5,
+                "noOfMembers":2,
                 "members":[
                     {
-                        "memName":"shubham",
+                        "memName":"Vrinda ",
                         "memId":12589,
-                        "totalFair":-125,
+                        "totalFair":225,
                         "fairDetails":[
                             {
                                 "date":"20/02/2020",
-                                "reason":"campus Shop",
-                                "fair":25
+                                "reason":"campus Shop 1",
+                                "fair":100
                             },
                             {
-                                "date":"20/02/2020",
-                                "reason":"campus Shop",
-                                "fair":25
+                                "date":"22/02/2020",
+                                "reason":"campus Shop 2",
+                                "fair":125
                             }
                         ]
                     },
                     {
-                        "memName":"Mayank",
+                        "memName":"Shardha",
                         "memId":1589,
                         "totalFair":-125,
                         "fairDetails":[
                             {
                                 "date":"20/02/2019",
-                                "reason":"campus Shop",
-                                "fair":250
+                                "reason":"campus Shopp 1",
+                                "fair":200
                             }
                         ]
                     }
                 ]
             },
             {
-                "grpName":"Naman wala",
+                "grpName":"Rascals",
                 "grpId":122855,
-                "noOfMembers":5,
+                "noOfMembers":2,
                 "members":[
                     {
-                        "memName":"Anjali",
+                        "memName":"Shivani",
                         "memId":1289,
-                        "totalFair":-125,
+                        "totalFair":275,
                         "fairDetails":[
                             {
                                 "date":"20/02/2020",
-                                "reason":"campus Shop",
+                                "reason":"Nescafe",
                                 "fair":25
                             },
                             {
                                 "date":"2/02/2020",
-                                "reason":"campus Shop",
-                                "fair":252
+                                "reason":"AV",
+                                "fair":250
                             }
                         ]
                     },
                     {
-                        "memName":"VAnsh",
+                        "memName":"Sonia",
                         "memId":1258,
-                        "totalFair":-125,
+                        "totalFair":125,
                         "fairDetails":[
                             {
                                 "date":"20/05/2020",
-                                "reason":"campus Shop",
-                                "fair":-125
+                                "reason":"Priyanshu",
+                                "fair":125
                             }
                         ]
                     }

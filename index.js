@@ -123,7 +123,8 @@ function addReportBackButton(){
     reportUI.classList.toggle('hide');
     reportUL.innerHTML=""; 
 }
-
+var grpId;
+var memId
 newRegistrationButton.addEventListener('click',addGroup);
 expensesButton.addEventListener('click',addExpensesCancel);
 reportButton.addEventListener('click',addReport.bind(true));
@@ -140,14 +141,14 @@ MemberDetailsBackButton.addEventListener('click',backMemberDetails);
 MemberDetails
 groupNamesClick.addEventListener('click',(e)=>{
   listItem=e.target;
-  console.log(listItem.textContent);
+  grpId=listItem.value;
  ShowMemberNames();
- grpMemberNameDetails()
+ grpMemberNameDetails(grpId);
  
 });
 individualMemberDetails.addEventListener('click',(e)=>{
     listItemofMembers=e.target;
-    console.log(listItemofMembers.firstChild.data);
+    memid=listItemofMembers.value;
     showIndividualMemberDetails();
-    eachMemberFairDetails();
+    eachMemberFairDetails(grpId,memid);
 });
