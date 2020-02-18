@@ -1,6 +1,157 @@
- {
-    "userId": 1,
-    "id": 1,
-    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
-  }
+[{
+        "accNAme":"vansh",
+        "accId":123,
+        "details":[
+            {
+                "grpName":"rahul wala",
+                "grpId":12255,
+                "noOfMembers":5,
+                "members":[
+                    {
+                        "memName":"shubham",
+                        "memId":12589,
+                        "totalFair":-125,
+                        "fairDetails":[
+                            {
+                                "date":"20/02/2020",
+                                "reason":"campus Shop",
+                                "fair":25
+                            },
+                            {
+                                "date":"20/02/2020",
+                                "reason":"campus Shop",
+                                "fair":25
+                            }
+                        ]
+                    },
+                    {
+                        "memName":"Mayank",
+                        "memId":1589,
+                        "totalFair":-125,
+                        "fairDetails":[
+                            {
+                                "date":"20/02/2019",
+                                "reason":"campus Shop",
+                                "fair":250
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "grpName":"Naman wala",
+                "grpId":122855,
+                "noOfMembers":5,
+                "members":[
+                    {
+                        "memName":"Anjali",
+                        "memId":1289,
+                        "totalFair":-125,
+                        "fairDetails":[
+                            {
+                                "date":"20/02/2020",
+                                "reason":"campus Shop",
+                                "fair":25
+                            },
+                            {
+                                "date":"2/02/2020",
+                                "reason":"campus Shop",
+                                "fair":252
+                            }
+                        ]
+                    },
+                    {
+                        "memName":"VAnsh",
+                        "memId":1258,
+                        "totalFair":-125,
+                        "fairDetails":[
+                            {
+                                "date":"20/05/2020",
+                                "reason":"campus Shop",
+                                "fair":-125
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+},
+{
+    "accNAme":"Anjali",
+    "accId":123,
+    "details":[
+        {
+            "grpName":"rahul wala",
+            "grpId":12255,
+            "noOfMembers":5,
+            "members":[
+                {
+                    "memName":"shubham",
+                    "memId":12589,
+                    "totalFair":-125,
+                    "fairDetails":[
+                        {
+                            "date":"20/02/2020",
+                            "reason":"campus Shop",
+                            "fair":25
+                        },
+                        {
+                            "date":"20/02/2020",
+                            "reason":"campus Shop",
+                            "fair":25
+                        }
+                    ]
+                },
+                {
+                    "memName":"Mayank",
+                    "memId":1589,
+                    "totalFair":-125,
+                    "fairDetails":[
+                        {
+                            "date":"20/02/2019",
+                            "reason":"campus Shop",
+                            "fair":250
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "grpName":"Naman wala",
+            "grpId":122855,
+            "noOfMembers":5,
+            "members":[
+                {
+                    "memName":"Anjali",
+                    "memId":1289,
+                    "totalFair":-125,
+                    "fairDetails":[
+                        {
+                            "date":"20/02/2020",
+                            "reason":"campus Shop",
+                            "fair":25
+                        },
+                        {
+                            "date":"2/02/2020",
+                            "reason":"campus Shop",
+                            "fair":252
+                        }
+                    ]
+                },
+                {
+                    "memName":"VAnsh",
+                    "memId":1258,
+                    "totalFair":-125,
+                    "fairDetails":[
+                        {
+                            "date":"20/05/2020",
+                            "reason":"campus Shop",
+                            "fair":-125
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+]

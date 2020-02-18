@@ -1,3 +1,4 @@
+
 const newRegistrationButton=document.getElementById('newreg');
 const expensesButton=document.getElementById('expens');
 const reportButton =document.getElementById('report');
@@ -5,6 +6,7 @@ const buttonUI=document.getElementById('buttonUI');
 const RegistrationUI=document.getElementById('RegistrationUI');
 const expensesUI=document.getElementById('expensesUI');
 const reportUI=document.getElementById('reportUI');
+const reportUL=document.querySelector('#reportUI ul');
 const addGroupAddButton=document.getElementById('addGroupAddButton');
 const addGroupCancelButton=document.getElementById('addGroupCancelButton')
 const addExpensesAddButton=document.getElementById("addExpensesAddButton");
@@ -20,27 +22,56 @@ const addButtonImg=document.getElementById('addButtonImg');
 const inputDiv=document.querySelector('.input-content');
 const groupNamesClick=document.querySelector('.group-names ul');
 const MemberNamesUI=document.getElementById('MemberNamesUI');
+const MemberNamesUL=document.querySelector('#MemberNamesUI ul');
+const memberdetailsUL=document.querySelector('#MemberDetails ul')
 const MemberNamesBackButton=document.getElementById('MemberNamesBackButton');
 const MemberDetails=document.getElementById('MemberDetails');
 const individualMemberDetails=document.querySelector('.Member ul');
 const MemberDetailsBackButton=document.getElementById('MemberDetailsBackButton');
+const regGroupName=document.getElementById('regGroupName');
+const regGroupMemberNo=document.getElementById('regGroupMemberNo');
+var home=false;
+var xmlhttp = new XMLHttpRequest(); 
+xmlhttp.open("GET", "DB.json",true);
+xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        myObj = JSON.parse(this.responseText);
+          
+        } 
+    };
+   
+xmlhttp.send();
+var myObj;
+   
+
+
 function addExpensesCancel(){
     buttonUI.classList.toggle('hide');
     expensesUI.classList.toggle('hide'); 
     reset(addExpensesInput);
 }
 function addGroup(){
+
 buttonUI.classList.toggle('hide');
 RegistrationUI.classList.toggle('hide');
 reset(addgroupNameInput);
+
 }
+ function sendRegGroupData(name,no){
+    
+} 
 function addReport(){
     buttonUI.classList.toggle('hide');
     reportUI.classList.toggle('hide'); 
-    
+    grpNameDetails();
+     
+   
     
 }
 function addMembersName(){
+regGroupNames=regGroupName.value;
+regGroupMemberNos=regGroupMemberNo.value;
+sendRegGroupData(regGroupNames,regGroupMemberNos); 
     RegistrationUI.classList.toggle('hide');
     addMemberName.classList.toggle('hide');
     reset(addMemberNameInput);
@@ -74,6 +105,7 @@ function ShowMemberNames(){
 function backmembernames(){
     MemberNamesUI.classList.toggle('hide');
     reportUI.classList.toggle('hide');
+    MemberNamesUL.innerHTML=""
 
 }
 function showIndividualMemberDetails(){
@@ -84,14 +116,21 @@ function showIndividualMemberDetails(){
 function backMemberDetails(){
     MemberDetails.classList.toggle('hide');
     MemberNamesUI.classList.toggle('hide');
+    memberdetailsUL.innerHTML="";
 }
+function addReportBackButton(){
+    buttonUI.classList.toggle('hide');
+    reportUI.classList.toggle('hide');
+    reportUL.innerHTML=""; 
+}
+
 newRegistrationButton.addEventListener('click',addGroup);
 expensesButton.addEventListener('click',addExpensesCancel);
-reportButton.addEventListener('click',addReport);
+reportButton.addEventListener('click',addReport.bind(true));
 addGroupCancelButton.addEventListener('click',addGroup);
 addExpensesCancelButton.addEventListener('click',addExpensesCancel);
 addExpensesAddButton.addEventListener('click',addExpensesDetails);
-groupNamesBackButton.addEventListener('click',addReport);
+groupNamesBackButton.addEventListener('click',addReportBackButton);
 MemberNamesBackButton.addEventListener('click',backmembernames);
 addGroupAddButton.addEventListener('click',addMembersName);
 addMemberNameAddButton.addEventListener('click',addMemberNameButton);
@@ -103,10 +142,12 @@ groupNamesClick.addEventListener('click',(e)=>{
   listItem=e.target;
   console.log(listItem.textContent);
  ShowMemberNames();
+ grpMemberNameDetails()
  
 });
 individualMemberDetails.addEventListener('click',(e)=>{
     listItemofMembers=e.target;
     console.log(listItemofMembers.firstChild.data);
     showIndividualMemberDetails();
+    eachMemberFairDetails();
 });

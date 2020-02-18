@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fair-Expenses</title>
     <link rel="stylesheet" href="index.css">
+     <script src="backend.js" defer></script> 
     <script src="index.js" defer></script>
+  
 </head>
 <body>
     <header>
@@ -16,24 +18,25 @@
             <p>Now You can Track Your Expenses Here!</p>
         </div>
     </header>
-    <p id="demo"></p>
+    <p id="demo"style="color:white"></p>
 
-<script>
-var xmlhttp = new XMLHttpRequest();
- xmlhttp.onreadystatechange = function() {
+<!-- <script>
+ var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     var myObj = JSON.parse(this.responseText);
-    document.getElementById("demo").innerHTML = myObj.userId;
-  }
-}; 
-/* xmlhttp.onload=function(){
+    document.getElementById("demo").innerHTML = myObj.userId
+  } 
+  };
+ xmlhttp.onload=function(){
     var myObj = JSON.parse(this.responseText);
-    document.getElementById("demo").innerHTML = myObj.userID;
-} */
+    console.log(myObj);
+   // document.getElementById("demo").innerHTML = myObj.userId;
+}  
 xmlhttp.open("GET", "DB.json", true);
-xmlhttp.send();
+xmlhttp.send(); 
 </script>
-    <section>
+ -->    <section>
         <div class="butt" id="buttonUI" >
             <button id="newreg">New Registration</button>
             <button id="expens">Expenses</button>
@@ -41,8 +44,8 @@ xmlhttp.send();
         </div>
         <div class="Registration hide" id="RegistrationUI">
             <h1>Add Group</h1>
-            <input type="text" placeholder="Enter Group Name.....">
-            <input type="text" placeholder="Enter No. of member in group">
+            <input id="regGroupName" type="text" placeholder="Enter Group Name.....">
+            <input id="regGroupMemberNo" type="text" placeholder="Enter No. of member in group">
             <button type="submit"id="addGroupAddButton">ADD</button>
             <button type="reset" id="addGroupCancelButton">Cancel</button>
         </div>
@@ -72,7 +75,7 @@ xmlhttp.send();
         <div class="group-names hide" id="reportUI">
             <h1>Group Names</h1>
             <ul>
-            <div class="group-list">
+             <!-- <div class="group-list">
                 <li>Vansh </li>
             </div>
             <div class="group-list">
@@ -92,51 +95,23 @@ xmlhttp.send();
             </div>
             <div class="group-list">
                 <li>Bhavi</li>
-            </div>
-            
+            </div> -->
+             
         </ul>
         <button class="backButton" id="groupNamesBackButton">Back</button>
         </div>
         <div class="Member hide" id="MemberNamesUI">
             <h1>Members Names</h1>
             <ul>
-                <div class="group-list list-member">
-                    <li><h5 >Vinod</h5> <h3 id="fair">-25</h3></li>
-                </div>
-                <div class="group-list list-member">
-                    <li><h5 >Lalita</h5> <h3 id="fair">-125</h3></li>
-                </div>
-                <div class="group-list list-member">
-                    <li><h5 >Ankit</h5> <h3 id="fair">25</h3></li>
-                </div>
-                <div class="group-list list-member">
-                    <li><h5 >Anjali</h5> <h3 id="fair">25</h3></li>
-                </div>
-                <div class="group-list list-member">
-                    <li><h5 >Shubham</h5> <h3 id="fair">125</h3></li>
-                </div>
-        </ul>
+               
+            </ul>
         <button class="backButton" id="MemberNamesBackButton">Back</button>
         </div>
         <div class="member-details hide" id="MemberDetails">
             <h1>Vansh</h1>
             <ul>
-            <div class="group-list">
-                <li><h5 id="date">21/02/2020</h5><p>Campus Shop given in chicken </p> <h3 id="fair">-25</h3></li>
-            </div>
-            <div class="group-list">
-                <li><h5 id="date">12/02/2020</h5><p>Campus Shop given in chicken </p> <h3 id="fair">-125</h3></li>
-            </div>
-            <div class="group-list">
-                <li><h5 id="date">1/02/2020</h5><p>Campus Shop given in chicken </p> <h3 id="fair">25</h3></li>
-            </div>
-            <div class="group-list">
-                <li><h5 id="date">5/02/2020</h5><p>Campus Shop given in chicken </p> <h3 id="fair">25</h3></li>
-            </div>
-            <div class="group-list">
-                <li><h5 id="date">21/01/2020</h5><p>Campus Shop given in chicken </p> <h3 id="fair">125</h3></li>
-            </div>
-        </ul>
+            
+            </ul>
         <button class="backButton" id="MemberDetailsBackButton">Back</button>
         <div class="total-fair">
             <h2>Total-Fair :</h2>
